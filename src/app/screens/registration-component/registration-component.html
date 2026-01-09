@@ -1,0 +1,104 @@
+
+<div class="bg-light min-vh-100 d-flex align-items-center">
+  <div class="container py-5">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-5 col-xl-4">
+
+        <div class="bg-white border rounded-4 shadow-sm p-4 p-md-5">
+
+          <!-- Brand -->
+          <div class="text-center mb-4">
+            <div class="fw-bold fs-3">ინტერნეტ აუქციონი</div>
+            <div class="text-muted">ანგარიშის შექმნა</div>
+          </div>
+
+          <!-- Optional alert -->
+          <!--
+          <div class="alert alert-danger" role="alert">
+            Email already exists.
+          </div>
+          -->
+
+          <form>
+            <!-- Email -->
+            <div class="mb-3">
+              <label class="form-label">ელ. ფოსტა</label>
+              <div class="input-group input-group-lg shadow-sm rounded-0">
+                <span class="input-group-text bg-white rounded-0">
+                  <i class="bi bi-envelope"></i>
+                </span>
+                <input type="email" class="form-control rounded-0" placeholder="name@email.com" required>
+              </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <label class="form-label">პაროლი</label>
+              <div class="input-group input-group-lg shadow-sm rounded-0">
+                <span class="input-group-text bg-white rounded-0">
+                  <i class="bi bi-lock"></i>
+                </span>
+                <input id="regPwd" type="password" class="form-control rounded-0" placeholder="Create a password" required>
+                <button class="btn btn-outline-secondary rounded-0" type="button" onclick="
+                  const p=document.getElementById('regPwd');
+                  p.type = (p.type==='password') ? 'text' : 'password';
+                  this.innerHTML = (p.type==='password')
+                    ? '<i class=&quot;bi bi-eye&quot;></i>'
+                    : '<i class=&quot;bi bi-eye-slash&quot;></i>';
+                ">
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+              <div class="form-text">პაროლი უნდა შედგებოდეს დიდი და პატარა ლათინური ასოებისგან ასევე უნდა ერიოს ციფრები და სიმბოლოები (მინიმუმ 8 სიმბოლო).</div>
+            </div>
+
+            <!-- Role -->
+            <div class="mb-3">
+              <label class="form-label">თქვენი როლი საიტზე</label>
+
+              <div class="row g-2">
+                <div class="col-6">
+                  <input type="radio" class="btn-check" name="role" id="roleBuyer" autocomplete="off" checked>
+                  <label class="btn btn-outline-primary w-100 btn-lg rounded-0" for="roleBuyer">
+                    <i class="bi bi-bag me-1"></i> მყიდველი
+                  </label>
+                </div>
+
+                <div class="col-6">
+                  <input type="radio" class="btn-check" name="role" id="roleSeller" autocomplete="off">
+                  <label class="btn btn-outline-primary w-100 btn-lg rounded-0" for="roleSeller">
+                    <i class="bi bi-shop me-1"></i> გამყიდველი
+                  </label>
+                </div>
+              </div>
+
+              <div class="text-muted small mt-2">
+                მყიდველი: ფასის შეთავაზება და ყიდვა. გამყიდველი: ნივთების ჩამოთვლა და გაყიდვა.
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary btn-lg">ანგარიშს შექმნა</button>
+              <a class="btn btn-outline-primary btn-lg" (click)="navigateToAuth()">ავტორიზაცია</a>
+            </div>
+
+            <div class="text-muted small mt-3 text-center">
+              ანგარიშს შექმნით თქვენ ეთანხმებით ჩვენს
+              <a class="text-decoration-none" href="/terms">პირობებს</a> და
+              <a class="text-decoration-none" href="/privacy">კონფიდენციალურობის პოლიტიკას</a>.
+            </div>
+          </form>
+
+        </div>
+
+        <div class="text-center text-muted small mt-3">
+          <a class="text-decoration-none btn" (click)="navigateToHome()">მთავარზე დაბრუნება</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

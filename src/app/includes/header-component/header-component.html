@@ -1,0 +1,100 @@
+<!-- TOPBAR -->
+<header class="bg-white border-bottom sticky-top">
+  <div class="container py-3">
+    <div class="d-flex align-items-center gap-3 flex-wrap">
+
+      <!-- Brand -->
+      <div class="d-flex flex-column">
+        <div (click)="navigateToHome()" class="fw-bold fs-4 lh-1 btn">ინტერნეტ აუქციონი</div>
+        <small class="text-muted">შესყიდვა • დაბიდვა • გაყიდვა</small>
+      </div>
+
+      <!-- Search -->
+      <div class="flex-grow-1 mt-4">
+        <div class="input-group input-group-lg shadow-sm">
+          <span class="input-group-text bg-white rounded-1"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="მოძებნეთ ნივთები, ბრენდები, სიტყვები...">
+          <button class="btn btn-primary rounded-0">ძებნა</button>
+        </div>
+        <div class="form-text">ცადეთ: iPhone, Nike, bmw, საათი...</div>
+      </div>
+
+      <!-- Actions -->
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-secondary rounded-1">გაყიდვა</button>
+        <button class="btn btn-outline-secondary rounded-1">პროდუქტების სია</button>
+      </div>
+
+
+      <ng-container *ngIf="!auth.isAuth(); else authed">
+        <button (click)="navigateToAuth()" class="btn btn-outline-primary rounded-1">ავტორიზაცია</button>
+      </ng-container>
+
+      <ng-template #authed>
+        <!-- Watchlist / Sell (optional) -->
+        <a class="btn btn-outline-secondary" routerLink="/watchlist">Watchlist</a>
+
+        <!-- Profile dropdown -->
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle d-flex align-items-center gap-2" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+
+            <i class="bi bi-person-circle"></i>
+            <span class="d-none d-sm-inline">{{ auth.user()?.email }}</span>
+          </button>
+
+          <ul class="dropdown-menu dropdown-menu-end shadow">
+            <li class="px-3 py-2">
+              <div class="fw-semibold">{{ auth.user()?.email }}</div>
+              <small class="text-muted">Role: {{ auth.user()?.role }}</small>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item" routerLink="/profile">
+                <i class="bi bi-person me-2"></i> Profile
+              </a>
+            </li>
+
+            <!-- Seller-only (optional) -->
+            <li *ngIf="auth.user()?.role === 'Seller'">
+              <a class="dropdown-item" routerLink="/sell">
+                <i class="bi bi-plus-circle me-2"></i> Sell item
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" routerLink="/my-auctions">
+                <i class="bi bi-hammer me-2"></i> My auctions
+              </a>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <button class="dropdown-item text-danger" type="button" (click)="logout()">
+                <i class="bi bi-box-arrow-right me-2"></i> Logout
+              </button>
+            </li>
+          </ul>
+        </div>
+      </ng-template>
+
+    </div>
+  </div>
+
+  <!-- Category pills -->
+  <div class="container pb-3">
+    <div class="d-flex gap-2 flex-wrap">
+      <button class="btn btn-sm btn-primary rounded-1">სრულად</button>
+      <button class="btn btn-sm btn-outline-secondary rounded-1">ელექტრონიკა</button>
+      <button class="btn btn-sm btn-outline-secondary rounded-1">მოდა</button>
+      <button class="btn btn-sm btn-outline-secondary rounded-1">სახლი და ცხოვრება</button>
+      <button class="btn btn-sm btn-outline-secondary rounded-1">ავტო ნაწილები</button>
+      <button class="btn btn-sm btn-outline-secondary rounded-1">კოლექციონირებადი ნივთები</button>
+    </div>
+  </div>
+</header>

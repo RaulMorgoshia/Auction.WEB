@@ -1,0 +1,351 @@
+
+<div class="bg-light min-vh-100">
+
+<app-header-component/>
+
+
+  <!-- HERO -->
+  <section class="container py-4">
+    <div class="p-4 p-lg-5 bg-white border rounded-1 shadow-sm">
+      <div class="row g-4 align-items-center">
+
+        <div class="col-lg-8">
+          <h1 class="fw-bold display-6 mb-2">დღევანდელი ცხელი აუქციონები</h1>
+          <p class="text-muted mb-3">
+            იპოვეთ შესანიშნავი შეთავაზებები, დადეთ სწრაფი ფსონი ან გამოიყენეთ <span class="fw-semibold">„ყიდვა მომენტალურად“</span> როდესაც ლოდინი არ გსურთ.
+          </p>
+
+          <div class="d-flex gap-2 flex-wrap">
+            <button class="btn btn-primary">ტრენდული სიახლეების დათვალიერება</button>
+            <button class="btn btn-outline-primary">გაყიდვის დაწყება</button>
+          </div>
+
+          <div class="row g-3 mt-4">
+            <div class="col-6 col-md-4">
+              <div class="p-3 bg-light border rounded-0">
+                <div class="fw-bold fs-5">12,340</div>
+                <small class="text-muted">აქტიური ლოტები</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="p-3 bg-light border rounded-0">
+                <div class="fw-bold fs-5">1,280</div>
+                <small class="text-muted">მალე მთავრდება</small>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="p-3 bg-light border rounded-0">
+                <div class="fw-bold fs-5">4.8 <span class="text-warning">★</span></div>
+                <small class="text-muted">გამყიდველის რეიტინგი</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- quick filters -->
+        <div class="col-lg-4">
+          <div class="p-3 p-md-4 text-bg-dark rounded-1 shadow-sm">
+            <div class="fw-bold mb-2">სწრაფი ფილტრები</div>
+
+            <div class="form-check my-2">
+              <input class="form-check-input" type="checkbox" id="endingSoon">
+              <label class="form-check-label" for="endingSoon">მალე მთავრდება</label>
+            </div>
+
+            <div class="form-check my-2">
+              <input class="form-check-input" type="checkbox" id="buyNowOnly">
+              <label class="form-check-label" for="buyNowOnly">ყიდვა მომენტალურად</label>
+            </div>
+
+            <div class="mt-3">
+              <label class="form-label mb-1">Sort</label>
+              <select class="form-select">
+                <option>მალე მთავრდება</option>
+                <option>უახლესი</option>
+                <option>ფასი: დაბალიდან მაღალამდე</option>
+                <option>ფასი: მაღალიდან დაბალამდე</option>
+              </select>
+            </div>
+
+            <button class="btn btn-outline-light w-100 mt-3">ფილტრების გასუფთავება</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MAIN -->
+  <main class="container pb-5">
+    <div class="row g-4">
+
+      <!-- SIDEBAR -->
+      <aside class="col-lg-3">
+        <div class="bg-white border rounded-1 p-3 shadow-sm">
+          <div class="fw-bold mb-2">კატეგორიები</div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary text-start">ყველა კატეგორია</button>
+            <button class="btn btn-outline-secondary text-start">ელექტრონიკა</button>
+            <button class="btn btn-outline-secondary text-start">მოდა</button>
+            <button class="btn btn-outline-secondary text-start">სახლი და ცხოვრება</button>
+            <button class="btn btn-outline-secondary text-start">ავტო ნაწილები</button>
+            <button class="btn btn-outline-secondary text-start">კოლექციონირებადი ნივთები</button>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded-1 p-3 shadow-sm mt-3">
+          <div class="fw-bold mb-2">ფასის დიაპაზონი (GEL)</div>
+          <div class="row g-2">
+            <div class="col-6">
+              <input class="form-control" type="number" placeholder="Min">
+            </div>
+            <div class="col-6">
+              <input class="form-control" type="number" placeholder="Max">
+            </div>
+          </div>
+          <small class="text-muted d-block mt-2">რჩევა: თუ გსურთ, დააყენეთ მხოლოდ მინიმალური ან მაქსიმალური.</small>
+        </div>
+
+        <div class="bg-white border rounded-1 p-3 shadow-sm mt-3">
+          <div class="fw-bold mb-2">Condition</div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="c1">
+            <label class="form-check-label" for="c1">ახალი</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="c2">
+            <label class="form-check-label" for="c2">გამოყენებული</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="c3">
+            <label class="form-check-label" for="c3">გახსნილი ყუთი</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="c4">
+            <label class="form-check-label" for="c4">შენაკეთები</label>
+          </div>
+        </div>
+
+        <div class="bg-white border rounded-1 p-3 shadow-sm mt-3">
+          <div class="fw-bold mb-2">მიწოდება</div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="s1">
+            <label class="form-check-label" for="s1">უფასო მიწოდება</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="s2">
+            <label class="form-check-label" for="s2">ფასიანი მიწოდება</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="s3">
+            <label class="form-check-label" for="s3">ჩემით წავიღებ</label>
+          </div>
+        </div>
+      </aside>
+
+
+      <!-- CONTENT -->
+      <section class="col-lg-9">
+
+        <!-- results header -->
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+          <div>
+            <div class="fw-bold">რეზულტატი</div>
+            <small class="text-muted">1,248 items found</small>
+          </div>
+
+          <div class="d-flex align-items-center gap-2">
+            <small class="text-muted">გვერდი <b>1</b> of <b>24</b></small>
+            <button class="btn btn-outline-secondary btn-sm">Prev</button>
+            <button class="btn btn-outline-secondary btn-sm">Next</button>
+          </div>
+        </div>
+
+        <!-- ENDING SOON -->
+        <div class="bg-white border rounded-1 p-3 shadow-sm mb-3">
+          <div class="fw-bold mb-2">მალე მთავრდება</div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <a class="text-decoration-none text-dark" href="#">
+                <div class="card border-0 shadow-sm h-100">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="https://picsum.photos/seed/es1/800/500" alt="Lot">
+                    <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">45m</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="fw-semibold">Vintage watch — collector item</div>
+                    <div class="text-muted small mt-1">Current: ₾360</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a class="text-decoration-none text-dark" href="#">
+                <div class="card border-0 shadow-sm h-100">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="https://picsum.photos/seed/es2/800/500" alt="Lot">
+                    <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">1h 10m</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="fw-semibold">iPhone 14 Pro Max 256GB</div>
+                    <div class="text-muted small mt-1">Current: ₾1250</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a class="text-decoration-none text-dark" href="#">
+                <div class="card border-0 shadow-sm h-100">
+                  <div class="position-relative">
+                    <img class="card-img-top" src="https://picsum.photos/seed/es3/800/500" alt="Lot">
+                    <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">2h 20m</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="fw-semibold">Nike Air Max 90 — EU 37.5</div>
+                    <div class="text-muted small mt-1">Current: ₾120</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- GRID -->
+        <div class="row g-3">
+
+          <!-- Card 1 -->
+          <div class="col-sm-6 col-xl-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img class="card-img-top" src="https://picsum.photos/seed/lot1/800/600" alt="Lot">
+                <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">45m</span>
+                <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2" title="Watch">
+                  <i class="bi bi-star"></i>
+                </button>
+                <span class="badge text-bg-warning position-absolute bottom-0 start-0 m-2">Featured</span>
+              </div>
+
+              <div class="card-body">
+                <div class="text-muted small mb-1">Electronics • Tbilisi</div>
+                <div class="fw-semibold">iPhone 14 Pro Max 256GB — Excellent condition</div>
+
+                <div class="d-flex justify-content-between gap-2 mt-3">
+                  <div>
+                    <div class="text-muted small">Current bid</div>
+                    <div class="fw-bold">₾1250</div>
+                  </div>
+                  <div class="text-end">
+                    <div class="text-muted small">Buy now</div>
+                    <div class="fw-semibold">₾1650</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3 pt-0">
+                <small class="text-muted">18 bids</small>
+                <button class="btn btn-primary btn-sm">Quick bid</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-sm-6 col-xl-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img class="card-img-top" src="https://picsum.photos/seed/lot2/800/600" alt="Lot">
+                <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">2h 20m</span>
+                <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2" title="Watch">
+                  <i class="bi bi-star"></i>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <div class="text-muted small mb-1">Fashion • Batumi</div>
+                <div class="fw-semibold">Nike Air Max 90 — EU 37.5</div>
+
+                <div class="d-flex justify-content-between gap-2 mt-3">
+                  <div>
+                    <div class="text-muted small">Current bid</div>
+                    <div class="fw-bold">₾120</div>
+                  </div>
+                  <div class="text-end">
+                    <div class="text-muted small">Buy now</div>
+                    <div class="fw-semibold">₾190</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3 pt-0">
+                <small class="text-muted">7 bids</small>
+                <button class="btn btn-primary btn-sm">Quick bid</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-sm-6 col-xl-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img class="card-img-top" src="https://picsum.photos/seed/lot3/800/600" alt="Lot">
+                <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">6h</span>
+                <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2" title="Watch">
+                  <i class="bi bi-star"></i>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <div class="text-muted small mb-1">Home & Living • Rustavi</div>
+                <div class="fw-semibold">Coffee table — modern minimal design</div>
+
+                <div class="d-flex justify-content-between gap-2 mt-3">
+                  <div>
+                    <div class="text-muted small">Current bid</div>
+                    <div class="fw-bold">₾140</div>
+                  </div>
+                  <div class="text-end">
+                    <div class="text-muted small">&nbsp;</div>
+                    <div class="fw-semibold text-muted">—</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3 pt-0">
+                <small class="text-muted">5 bids</small>
+                <button class="btn btn-primary btn-sm">Quick bid</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- დაამატე რამდენიც გინდა card-ები იგივე ფორმატით... -->
+
+        </div>
+
+        <!-- Pagination -->
+        <nav class="mt-4">
+          <ul class="pagination justify-content-center flex-wrap gap-1">
+            <li class="page-item"><a class="page-link" href="#">First</a></li>
+            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">…</a></li>
+            <li class="page-item"><a class="page-link" href="#">24</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            <li class="page-item"><a class="page-link" href="#">Last</a></li>
+          </ul>
+        </nav>
+
+      </section>
+    </div>
+  </main>
+
+
+<app-footer-component></app-footer-component>
+
+</div>
+
+

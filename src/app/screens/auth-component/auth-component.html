@@ -1,0 +1,91 @@
+<div class="bg-light min-vh-100 d-flex align-items-center">
+  <div class="container py-5">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-5 col-xl-4">
+
+        <!-- Card -->
+        <div class="bg-white border rounded-1 shadow-sm p-4 p-md-5">
+
+          <!-- Brand -->
+          <div class="text-center mb-4">
+            <div class="fw-bold fs-3">ინტერნეტ აუქციონი</div>
+            <div class="text-muted">შედით სისტემაში ფასის შესათავაზებლად ან გასაყიდად</div>
+          </div>
+
+          <div *ngIf="error()" class="alert alert-danger" role="alert">
+            {{ error() }}
+          </div>
+
+          <form [formGroup]="form" (ngSubmit)="submit()">
+            <!-- Email -->
+            <div class="mb-3">
+              <label class="form-label">ელ: ფოსტა</label>
+              <div class="input-group input-group-lg shadow-sm rounded-0">
+                <span class="input-group-text bg-white rounded-0">
+                  <i class="bi bi-envelope"></i>
+                </span>
+                <input type="email" class="form-control fs-6 rounded-0" formControlName="email"
+                  placeholder="dato@gmail.com">
+              </div>
+              <div class="text-danger small mt-1" *ngIf="form.controls.email.touched && form.controls.email.invalid">
+                Enter a valid email.
+              </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-2">
+              <label class="form-label">პაროლი</label>
+              <div class="input-group input-group-lg shadow-sm rounded-0">
+                <span class="input-group-text bg-white rounded-0"><i class="bi bi-lock"></i></span>
+                <input [type]="showPwd() ? 'text' : 'password'" class="form-control rounded-0"
+                  formControlName="password" placeholder="Your password">
+                <button class="btn btn-outline-secondary rounded-0" type="button" (click)="showPwd.set(!showPwd())">
+                  <i class="bi" [class.bi-eye]="!showPwd()" [class.bi-eye-slash]="showPwd()"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Remember + Forgot -->
+            <div class="d-flex justify-content-between align-items-center my-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="remember" formControlName="remember">
+                <label class="form-check-label" for="remember">დამახსოვრება</label>
+              </div>
+              <a class="text-decoration-none" href="/forgot-password">პაროლის აღდგენა?</a>
+            </div>
+
+            <!-- Submit -->
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary btn-lg" [disabled]="loading()">
+                <span *ngIf="loading()" class="spinner-border spinner-border-sm me-2"></span>
+                შესვლა
+              </button>
+              <a class="btn btn-outline-primary btn-lg" routerLink="/register">ანგარიშის შექმნა</a>
+            </div>
+
+            <div class="text-muted small mt-3 text-center">
+              ავტორიზაციით თქვენ ეთანხმებით ჩვენს <a class="text-decoration-none" href="/terms">პირობებს</a> და
+              <a class="text-decoration-none" href="/privacy">კონფიდენციალურობის პოლიტიკას</a>.
+            </div>
+          </form>
+
+          <hr class="my-4">
+
+          <!-- Optional social -->
+          <div class="d-grid gap-2">
+            <button class="btn btn-outline-secondary">
+              <i class="bi bi-google me-2 rounded-1"></i> Continue with Google
+            </button>
+          </div>
+
+        </div>
+
+        <div class="text-center text-muted small mt-3">
+          <a class="text-decoration-none btn" (click)="navigateToHome()">მთავარზე დაბრუნება</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
