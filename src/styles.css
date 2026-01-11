@@ -41,6 +41,9 @@ body {
   grid-template-rows: var(--header-h) 1fr var(--footer-h);
 }
 
+
+
+
 /* Sidebar */
 .sidebar {
   grid-row: 1 / span 3;
@@ -135,19 +138,11 @@ body {
   background: #fafafa;
 }
 
-/* ✅ Header */
 .header {
-  grid-column: 2;
-  grid-row: 1;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 14px;
   padding: 20px var(--page-pad);
-
-  border-bottom: 1px solid var(--line);
-  background: #fff;
-  min-width: 0;
-  
 }
 
 .title {
@@ -204,7 +199,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 10px;
+  padding: 1px 10px;
   border-radius: 14px;
   border: 1px solid var(--line);
   background: #fff;
@@ -213,7 +208,11 @@ body {
 }
 
 
-
+.centers {
+  display: flex;
+  justify-content: center;
+  gap:10px
+}
 
 .avatar {
   width: 34px;
