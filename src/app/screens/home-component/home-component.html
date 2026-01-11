@@ -1,351 +1,349 @@
+<div class="frame">
+  <div class="app">
 
-<div class="bg-light min-vh-100">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-badge">XA</div>
+        <div class="brand-name">XAUCTION</div>
+      </div>
 
-<app-header-component/>
+      <nav class="nav">
+        <a class="active" href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" />
+          </svg>
+          Dashboard
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12l9-9 9 9" />
+            <path d="M9 21V9h6v12" />
+          </svg>
+          Marketplace
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19V5" />
+            <path d="M8 17V7" />
+            <path d="M12 19V5" />
+            <path d="M16 13V11" />
+            <path d="M20 17V7" />
+          </svg>
+          My Portofolio
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M20.8 7.6a5.5 5.5 0 0 0-7.8 0L12 8.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 22l7.8-5.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+          </svg>
+          Favourite Items
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 7h18" />
+            <path d="M5 7l1 14h12l1-14" />
+            <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+          </svg>
+          My Wallet
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12a9 9 0 1 0 9-9" />
+            <path d="M3 12h9" />
+            <path d="M12 3v9" />
+          </svg>
+          History
+        </a>
+        <a href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+            <path
+              d="M19.4 15a7.7 7.7 0 0 0 .1-2l2-1.6-2-3.4-2.4.9a7.4 7.4 0 0 0-1.7-1L15 5h-6l-.4 2.3a7.4 7.4 0 0 0-1.7 1L4.5 7.4l-2 3.4 2 1.6a7.7 7.7 0 0 0 .1 2l-2 1.6 2 3.4 2.4-.9a7.4 7.4 0 0 0 1.7 1L9 19h6l.4-2.3a7.4 7.4 0 0 0 1.7-1l2.4.9 2-3.4-2-1.6z" />
+          </svg>
+          Settings
+        </a>
+      </nav>
+
+      <div class="logout">
+        <a href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M10 17l5-5-5-5" />
+            <path d="M15 12H3" />
+            <path d="M21 21V3" />
+          </svg>
+          Log Out
+        </a>
+      </div>
+    </aside>
+
+    <app-header-component></app-header-component>
 
 
-  <!-- HERO -->
-  <section class="container py-4">
-    <div class="p-4 p-lg-5 bg-white border rounded-1 shadow-sm">
-      <div class="row g-4 align-items-center">
+    <!-- ✅ Main -->
+    <section class="main">
+      <div class="content">
 
-        <div class="col-lg-8">
-          <h1 class="fw-bold display-6 mb-2">დღევანდელი ცხელი აუქციონები</h1>
-          <p class="text-muted mb-3">
-            იპოვეთ შესანიშნავი შეთავაზებები, დადეთ სწრაფი ფსონი ან გამოიყენეთ <span class="fw-semibold">„ყიდვა მომენტალურად“</span> როდესაც ლოდინი არ გსურთ.
-          </p>
-
-          <div class="d-flex gap-2 flex-wrap">
-            <button class="btn btn-primary">ტრენდული სიახლეების დათვალიერება</button>
-            <button class="btn btn-outline-primary">გაყიდვის დაწყება</button>
+        <!-- Featured Creators -->
+        <div class="section">
+          <div class="section-head">
+            <div class="section-title">Featured Creators</div>
+            <div class="pill">Popular
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                style="opacity:.7">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
           </div>
 
-          <div class="row g-3 mt-4">
-            <div class="col-6 col-md-4">
-              <div class="p-3 bg-light border rounded-0">
-                <div class="fw-bold fs-5">12,340</div>
-                <small class="text-muted">აქტიური ლოტები</small>
+          <div class="creators">
+            <!-- 4 ცალი იგივე დატოვე; სურვილისამებრ დაამატე კიდევ რიგები -->
+            <div class="creator-card">
+              <div class="creator-cover" style="background-image:url('https://picsum.photos/800/250?random=21')"></div>
+
+              <div class="creator-body">
+                <div class="creator-avatar">
+                  <img src="https://i.pravatar.cc/40?img=12" alt="Alex">
+                </div>
+
+                <div class="creator-name">Alex Jackie</div>
+                <div class="creator-loc">Melbourne, AUS</div>
+                <button class="btn primary">Follow</button>
               </div>
             </div>
-            <div class="col-6 col-md-4">
-              <div class="p-3 bg-light border rounded-0">
-                <div class="fw-bold fs-5">1,280</div>
-                <small class="text-muted">მალე მთავრდება</small>
+
+            <div class="creator-card">
+              <div class="creator-cover" style="background-image:url('https://picsum.photos/800/250?random=22')"></div>
+
+              <div class="creator-body">
+                <div class="creator-avatar">
+                  <img src="https://i.pravatar.cc/40?img=13" alt="Alex">
+                </div>
+                <div class="creator-name">Evangeline</div>
+                <div class="creator-loc">California, USA</div>
+                <button class="btn outline">Followed</button>
               </div>
             </div>
-            <div class="col-12 col-md-4">
-              <div class="p-3 bg-light border rounded-0">
-                <div class="fw-bold fs-5">4.8 <span class="text-warning">★</span></div>
-                <small class="text-muted">გამყიდველის რეიტინგი</small>
+
+            <div class="creator-card">
+              <div class="creator-cover" style="background-image:url('https://picsum.photos/800/250?random=23')"></div>
+
+              <div class="creator-body">
+                <div class="creator-avatar">
+                  <img src="https://i.pravatar.cc/40?img=14" alt="Alex">
+                </div>
+                <div class="creator-name">Stephanie Valerie</div>
+                <div class="creator-loc">Salernitana, ITA</div>
+                <button class="btn primary">Follow</button>
+              </div>
+            </div>
+
+            <div class="creator-card">
+              <div class="creator-cover" style="background-image:url('https://picsum.photos/800/250?random=24')"></div>
+
+              <div class="creator-body">
+                <div class="creator-avatar">
+                  <img src="https://i.pravatar.cc/40?img=15" alt="Alex">
+                </div>
+                <div class="creator-name">Irene Valpoort</div>
+                <div class="creator-loc">Amsterdam, NED</div>
+                <button class="btn primary">Follow</button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- quick filters -->
-        <div class="col-lg-4">
-          <div class="p-3 p-md-4 text-bg-dark rounded-1 shadow-sm">
-            <div class="fw-bold mb-2">სწრაფი ფილტრები</div>
+        <!-- Featured Items -->
+        <div class="section">
+          <div class="section-head">
+            <div class="section-title">Featured Items</div>
+            <div class="pill">Trending
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                style="opacity:.7">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </div>
+          </div>
 
-            <div class="form-check my-2">
-              <input class="form-check-input" type="checkbox" id="endingSoon">
-              <label class="form-check-label" for="endingSoon">მალე მთავრდება</label>
+          <div class="items">
+            <div class="item-card">
+              <div class="item-img" style="background-image:url('https://picsum.photos/600/400?random=11')"></div>
+
+              <div class="item-body">
+                <div class="item-top">
+                  <div>
+                    <div class="item-title">Bubble XYZ</div>
+                    <div class="item-sub">By Robertson</div>
+                  </div>
+                  <div class="price">1.56 ETH</div>
+                </div>
+
+                <div class="meta">
+                  <div><strong>02 : 02 : 56</strong>
+                    <div style="font-size:11px;color:var(--muted)">End Time</div>
+                  </div>
+                  <div style="text-align:right"><strong>Highest Bid</strong>
+                    <div style="font-size:11px;color:var(--muted)">&nbsp;</div>
+                  </div>
+                </div>
+
+                <div class="bid">
+                  <div></div>
+                  <button class="btn bidbtn">Place A Bid</button>
+                </div>
+              </div>
             </div>
 
-            <div class="form-check my-2">
-              <input class="form-check-input" type="checkbox" id="buyNowOnly">
-              <label class="form-check-label" for="buyNowOnly">ყიდვა მომენტალურად</label>
+            <div class="item-card">
+              <div class="item-img" style="background-image:url('https://picsum.photos/600/400?random=1')"></div>
+
+              <div class="item-body">
+                <div class="item-top">
+                  <div>
+                    <div class="item-title">Bubble ZXR</div>
+                    <div class="item-sub">By Christiano</div>
+                  </div>
+                  <div class="price">1.52 ETH</div>
+                </div>
+
+                <div class="meta">
+                  <div><strong>02 : 01 : 43</strong>
+                    <div style="font-size:11px;color:var(--muted)">End Time</div>
+                  </div>
+                  <div style="text-align:right"><strong>Highest Bid</strong>
+                    <div style="font-size:11px;color:var(--muted)">&nbsp;</div>
+                  </div>
+                </div>
+
+                <div class="bid">
+                  <div></div>
+                  <button class="btn bidbtn">Place A Bid</button>
+                </div>
+              </div>
             </div>
 
-            <div class="mt-3">
-              <label class="form-label mb-1">Sort</label>
-              <select class="form-select">
-                <option>მალე მთავრდება</option>
-                <option>უახლესი</option>
-                <option>ფასი: დაბალიდან მაღალამდე</option>
-                <option>ფასი: მაღალიდან დაბალამდე</option>
-              </select>
-            </div>
+            <div class="item-card">
+              <div class="item-img" style="background-image:url('https://picsum.photos/600/400?random=2')"></div>
 
-            <button class="btn btn-outline-light w-100 mt-3">ფილტრების გასუფთავება</button>
+              <div class="item-body">
+                <div class="item-top">
+                  <div>
+                    <div class="item-title">Bubble EXR</div>
+                    <div class="item-sub">By Diogo Jota</div>
+                  </div>
+                  <div class="price">1.48 ETH</div>
+                </div>
+
+                <div class="meta">
+                  <div><strong>01 : 02 : 25</strong>
+                    <div style="font-size:11px;color:var(--muted)">End Time</div>
+                  </div>
+                  <div style="text-align:right"><strong>Highest Bid</strong>
+                    <div style="font-size:11px;color:var(--muted)">&nbsp;</div>
+                  </div>
+                </div>
+
+                <div class="bid">
+                  <div></div>
+                  <button class="btn bidbtn">Place A Bid</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
-    </div>
-  </section>
 
-
-  <!-- MAIN -->
-  <main class="container pb-5">
-    <div class="row g-4">
-
-      <!-- SIDEBAR -->
-      <aside class="col-lg-3">
-        <div class="bg-white border rounded-1 p-3 shadow-sm">
-          <div class="fw-bold mb-2">კატეგორიები</div>
-          <div class="d-grid gap-2">
-            <button class="btn btn-primary text-start">ყველა კატეგორია</button>
-            <button class="btn btn-outline-secondary text-start">ელექტრონიკა</button>
-            <button class="btn btn-outline-secondary text-start">მოდა</button>
-            <button class="btn btn-outline-secondary text-start">სახლი და ცხოვრება</button>
-            <button class="btn btn-outline-secondary text-start">ავტო ნაწილები</button>
-            <button class="btn btn-outline-secondary text-start">კოლექციონირებადი ნივთები</button>
+      <!-- Right Panel -->
+      <aside class="right">
+        <div class="right-head">
+          <div class="right-title">Sold Items</div>
+          <div class="dropdown">2020
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              style="opacity:.7; margin-left:6px">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
           </div>
         </div>
 
-        <div class="bg-white border rounded-1 p-3 shadow-sm mt-3">
-          <div class="fw-bold mb-2">ფასის დიაპაზონი (GEL)</div>
-          <div class="row g-2">
-            <div class="col-6">
-              <input class="form-control" type="number" placeholder="Min">
+        <div class="sold-list">
+          <!-- შენი rows 그대로 -->
+          <div class="sold-row">
+            <div class="thumb">
+              <img src="https://picsum.photos/50/50?random=31" alt="">
             </div>
-            <div class="col-6">
-              <input class="form-control" type="number" placeholder="Max">
+
+            <div class="sold-info">
+              <div class="sold-name">Abstractly Rainbow</div>
+              <div class="sold-time">08:00 PM, 22 Sep 2020</div>
             </div>
+            <div class="sold-badge">SOLD</div>
           </div>
-          <small class="text-muted d-block mt-2">რჩევა: თუ გსურთ, დააყენეთ მხოლოდ მინიმალური ან მაქსიმალური.</small>
-        </div>
-
-        <div class="bg-white border rounded-1 p-3 shadow-sm mt-3">
-          <div class="fw-bold mb-2">Condition</div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="c1">
-            <label class="form-check-label" for="c1">ახალი</label>
+          <div class="sold-row">
+            <div class="thumb">
+              <img src="https://picsum.photos/50/50?random=31" alt="">
+            </div>
+            <div class="sold-info">
+              <div class="sold-name">Paint Texture Rainbow</div>
+              <div class="sold-time">07:42 PM, 22 Sep 2020</div>
+            </div>
+            <div class="sold-badge">SOLD</div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="c2">
-            <label class="form-check-label" for="c2">გამოყენებული</label>
+          <div class="sold-row">
+            <div class="thumb">
+              <img src="https://picsum.photos/50/50?random=31" alt="">
+            </div>
+            <div class="sold-info">
+              <div class="sold-name">Texture Bhatixano</div>
+              <div class="sold-time">07:20 PM, 22 Sep 2020</div>
+            </div>
+            <div class="sold-badge">SOLD</div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="c3">
-            <label class="form-check-label" for="c3">გახსნილი ყუთი</label>
+          <div class="sold-row">
+            <div class="thumb">
+              <img src="https://picsum.photos/50/50?random=31" alt="">
+            </div>
+            <div class="sold-info">
+              <div class="sold-name">Abstractly Nion Rate</div>
+              <div class="sold-time">10:00 PM, 21 Sep 2020</div>
+            </div>
+            <div class="sold-badge">SOLD</div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="c4">
-            <label class="form-check-label" for="c4">შენაკეთები</label>
+          <div class="sold-row">
+            <div class="thumb">
+              <img src="https://picsum.photos/50/50?random=31" alt="">
+            </div>
+            <div class="sold-info">
+              <div class="sold-name">Pattern Merkhujo</div>
+              <div class="sold-time">09:56 PM, 21 Sep 2020</div>
+            </div>
+            <div class="sold-badge">SOLD</div>
           </div>
-        </div>
-
-        <div class="bg-white border rounded-1 p-3 shadow-sm mt-3">
-          <div class="fw-bold mb-2">მიწოდება</div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="s1">
-            <label class="form-check-label" for="s1">უფასო მიწოდება</label>
+          <div class="sold-row">
+            <div class="thumb">
+              <img src="https://picsum.photos/50/50?random=31" alt="">
+            </div>
+            <div class="sold-info">
+              <div class="sold-name">Yellow Blue Texture</div>
+              <div class="sold-time">11:00 PM, 20 Sep 2020</div>
+            </div>
+            <div class="sold-badge">SOLD</div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="s2">
-            <label class="form-check-label" for="s2">ფასიანი მიწოდება</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="s3">
-            <label class="form-check-label" for="s3">ჩემით წავიღებ</label>
+          <div class="sold-row">
+            <div class="thumb">
+              <img src="https://picsum.photos/50/50?random=31" alt="">
+            </div>
+            <div class="sold-info">
+              <div class="sold-name">Bubble Verx Rainbow</div>
+              <div class="sold-time">10:00 PM, 20 Sep 2020</div>
+            </div>
+            <div class="sold-badge">SOLD</div>
           </div>
         </div>
       </aside>
+    </section>
 
+    <app-footer-component></app-footer-component>
 
-      <!-- CONTENT -->
-      <section class="col-lg-9">
-
-        <!-- results header -->
-        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
-          <div>
-            <div class="fw-bold">რეზულტატი</div>
-            <small class="text-muted">1,248 items found</small>
-          </div>
-
-          <div class="d-flex align-items-center gap-2">
-            <small class="text-muted">გვერდი <b>1</b> of <b>24</b></small>
-            <button class="btn btn-outline-secondary btn-sm">Prev</button>
-            <button class="btn btn-outline-secondary btn-sm">Next</button>
-          </div>
-        </div>
-
-        <!-- ENDING SOON -->
-        <div class="bg-white border rounded-1 p-3 shadow-sm mb-3">
-          <div class="fw-bold mb-2">მალე მთავრდება</div>
-
-          <div class="row g-3">
-            <div class="col-md-4">
-              <a class="text-decoration-none text-dark" href="#">
-                <div class="card border-0 shadow-sm h-100">
-                  <div class="position-relative">
-                    <img class="card-img-top" src="https://picsum.photos/seed/es1/800/500" alt="Lot">
-                    <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">45m</span>
-                  </div>
-                  <div class="card-body">
-                    <div class="fw-semibold">Vintage watch — collector item</div>
-                    <div class="text-muted small mt-1">Current: ₾360</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4">
-              <a class="text-decoration-none text-dark" href="#">
-                <div class="card border-0 shadow-sm h-100">
-                  <div class="position-relative">
-                    <img class="card-img-top" src="https://picsum.photos/seed/es2/800/500" alt="Lot">
-                    <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">1h 10m</span>
-                  </div>
-                  <div class="card-body">
-                    <div class="fw-semibold">iPhone 14 Pro Max 256GB</div>
-                    <div class="text-muted small mt-1">Current: ₾1250</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4">
-              <a class="text-decoration-none text-dark" href="#">
-                <div class="card border-0 shadow-sm h-100">
-                  <div class="position-relative">
-                    <img class="card-img-top" src="https://picsum.photos/seed/es3/800/500" alt="Lot">
-                    <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">2h 20m</span>
-                  </div>
-                  <div class="card-body">
-                    <div class="fw-semibold">Nike Air Max 90 — EU 37.5</div>
-                    <div class="text-muted small mt-1">Current: ₾120</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- GRID -->
-        <div class="row g-3">
-
-          <!-- Card 1 -->
-          <div class="col-sm-6 col-xl-4">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <img class="card-img-top" src="https://picsum.photos/seed/lot1/800/600" alt="Lot">
-                <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">45m</span>
-                <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2" title="Watch">
-                  <i class="bi bi-star"></i>
-                </button>
-                <span class="badge text-bg-warning position-absolute bottom-0 start-0 m-2">Featured</span>
-              </div>
-
-              <div class="card-body">
-                <div class="text-muted small mb-1">Electronics • Tbilisi</div>
-                <div class="fw-semibold">iPhone 14 Pro Max 256GB — Excellent condition</div>
-
-                <div class="d-flex justify-content-between gap-2 mt-3">
-                  <div>
-                    <div class="text-muted small">Current bid</div>
-                    <div class="fw-bold">₾1250</div>
-                  </div>
-                  <div class="text-end">
-                    <div class="text-muted small">Buy now</div>
-                    <div class="fw-semibold">₾1650</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3 pt-0">
-                <small class="text-muted">18 bids</small>
-                <button class="btn btn-primary btn-sm">Quick bid</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-sm-6 col-xl-4">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <img class="card-img-top" src="https://picsum.photos/seed/lot2/800/600" alt="Lot">
-                <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">2h 20m</span>
-                <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2" title="Watch">
-                  <i class="bi bi-star"></i>
-                </button>
-              </div>
-
-              <div class="card-body">
-                <div class="text-muted small mb-1">Fashion • Batumi</div>
-                <div class="fw-semibold">Nike Air Max 90 — EU 37.5</div>
-
-                <div class="d-flex justify-content-between gap-2 mt-3">
-                  <div>
-                    <div class="text-muted small">Current bid</div>
-                    <div class="fw-bold">₾120</div>
-                  </div>
-                  <div class="text-end">
-                    <div class="text-muted small">Buy now</div>
-                    <div class="fw-semibold">₾190</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3 pt-0">
-                <small class="text-muted">7 bids</small>
-                <button class="btn btn-primary btn-sm">Quick bid</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-sm-6 col-xl-4">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <img class="card-img-top" src="https://picsum.photos/seed/lot3/800/600" alt="Lot">
-                <span class="badge text-bg-dark position-absolute top-0 start-0 m-2">6h</span>
-                <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2" title="Watch">
-                  <i class="bi bi-star"></i>
-                </button>
-              </div>
-
-              <div class="card-body">
-                <div class="text-muted small mb-1">Home & Living • Rustavi</div>
-                <div class="fw-semibold">Coffee table — modern minimal design</div>
-
-                <div class="d-flex justify-content-between gap-2 mt-3">
-                  <div>
-                    <div class="text-muted small">Current bid</div>
-                    <div class="fw-bold">₾140</div>
-                  </div>
-                  <div class="text-end">
-                    <div class="text-muted small">&nbsp;</div>
-                    <div class="fw-semibold text-muted">—</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3 pt-0">
-                <small class="text-muted">5 bids</small>
-                <button class="btn btn-primary btn-sm">Quick bid</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- დაამატე რამდენიც გინდა card-ები იგივე ფორმატით... -->
-
-        </div>
-
-        <!-- Pagination -->
-        <nav class="mt-4">
-          <ul class="pagination justify-content-center flex-wrap gap-1">
-            <li class="page-item"><a class="page-link" href="#">First</a></li>
-            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item disabled"><a class="page-link" href="#">…</a></li>
-            <li class="page-item"><a class="page-link" href="#">24</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            <li class="page-item"><a class="page-link" href="#">Last</a></li>
-          </ul>
-        </nav>
-
-      </section>
-    </div>
-  </main>
-
-
-<app-footer-component></app-footer-component>
-
+  </div>
 </div>
-
-
