@@ -1,349 +1,306 @@
-<div class="frame">
-  <div class="app">
+<app-header-component/>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-badge">XA</div>
-        <div class="brand-name">XAUCTION</div>
-      </div>
-
-      <nav class="nav">
-        <a class="active" href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" />
-          </svg>
-          Dashboard
-        </a>
-        <a href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 12l9-9 9 9" />
-            <path d="M9 21V9h6v12" />
-          </svg>
-          Marketplace
-        </a>
-        <a href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 19V5" />
-            <path d="M8 17V7" />
-            <path d="M12 19V5" />
-            <path d="M16 13V11" />
-            <path d="M20 17V7" />
-          </svg>
-          My Portofolio
-        </a>
-        <a href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path
-              d="M20.8 7.6a5.5 5.5 0 0 0-7.8 0L12 8.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 22l7.8-5.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
-          </svg>
-          Favourite Items
-        </a>
-        <a href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 7h18" />
-            <path d="M5 7l1 14h12l1-14" />
-            <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
-          </svg>
-          My Wallet
-        </a>
-        <a href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 12a9 9 0 1 0 9-9" />
-            <path d="M3 12h9" />
-            <path d="M12 3v9" />
-          </svg>
-          History
-        </a>
-        <a href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
-            <path
-              d="M19.4 15a7.7 7.7 0 0 0 .1-2l2-1.6-2-3.4-2.4.9a7.4 7.4 0 0 0-1.7-1L15 5h-6l-.4 2.3a7.4 7.4 0 0 0-1.7 1L4.5 7.4l-2 3.4 2 1.6a7.7 7.7 0 0 0 .1 2l-2 1.6 2 3.4 2.4-.9a7.4 7.4 0 0 0 1.7 1L9 19h6l.4-2.3a7.4 7.4 0 0 0 1.7-1l2.4.9 2-3.4-2-1.6z" />
-          </svg>
-          Settings
-        </a>
-      </nav>
-
-      <div class="logout">
-        <a href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-            <path d="M10 17l5-5-5-5" />
-            <path d="M15 12H3" />
-            <path d="M21 21V3" />
-          </svg>
-          Log Out
-        </a>
-      </div>
-    </aside>
-
-    <app-header-component></app-header-component>
-
-
-    <!-- ✅ Main -->
-    <section class="main">
-      <div class="content">
-
-        <!-- Featured Creators -->
-        <div class="section">
-          <div class="section-head">
-            <div class="section-title">Featured Creators</div>
-            <div class="pill">Popular
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
-                style="opacity:.7">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </div>
-          </div>
-
-          <div class="creators">
-            <!-- 4 ცალი იგივე დატოვე; სურვილისამებრ დაამატე კიდევ რიგები -->
-            <div class="creator-card">
-              <div class="creator-cover" style="background-image:url('https://picsum.photos/800/250?random=21')"></div>
-
-              <div class="creator-body">
-                <div class="creator-avatar">
-                  <img src="https://i.pravatar.cc/40?img=12" alt="Alex">
-                </div>
-
-                <div class="creator-name">Alex Jackie</div>
-                <div class="creator-loc">Melbourne, AUS</div>
-                <button class="btn primary">Follow</button>
-              </div>
-            </div>
-
-            <div class="creator-card">
-              <div class="creator-cover" style="background-image:url('https://picsum.photos/800/250?random=22')"></div>
-
-              <div class="creator-body">
-                <div class="creator-avatar">
-                  <img src="https://i.pravatar.cc/40?img=13" alt="Alex">
-                </div>
-                <div class="creator-name">Evangeline</div>
-                <div class="creator-loc">California, USA</div>
-                <button class="btn outline">Followed</button>
-              </div>
-            </div>
-
-            <div class="creator-card">
-              <div class="creator-cover" style="background-image:url('https://picsum.photos/800/250?random=23')"></div>
-
-              <div class="creator-body">
-                <div class="creator-avatar">
-                  <img src="https://i.pravatar.cc/40?img=14" alt="Alex">
-                </div>
-                <div class="creator-name">Stephanie Valerie</div>
-                <div class="creator-loc">Salernitana, ITA</div>
-                <button class="btn primary">Follow</button>
-              </div>
-            </div>
-
-            <div class="creator-card">
-              <div class="creator-cover" style="background-image:url('https://picsum.photos/800/250?random=24')"></div>
-
-              <div class="creator-body">
-                <div class="creator-avatar">
-                  <img src="https://i.pravatar.cc/40?img=15" alt="Alex">
-                </div>
-                <div class="creator-name">Irene Valpoort</div>
-                <div class="creator-loc">Amsterdam, NED</div>
-                <button class="btn primary">Follow</button>
-              </div>
-            </div>
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div>
+          <h1>Bid smarter. Buy faster. Discover live auctions every day.</h1>
+          <p>Light marketplace homepage + mobile optimized layout (drawer filters & snap carousel).</p>
+          <div class="hero__cta">
+            <button class="btn btn--primary">Explore live auctions</button>
+            <button class="btn">Start selling</button>
+            <button class="btn btn--ghost">How it works</button>
           </div>
         </div>
 
-        <!-- Featured Items -->
-        <div class="section">
-          <div class="section-head">
-            <div class="section-title">Featured Items</div>
-            <div class="pill">Trending
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
-                style="opacity:.7">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
+        <div class="hero__stat">
+          <div class="kpis">
+            <div class="kpi">
+              <div class="k">Live today</div>
+              <div class="v">1,248</div>
+            </div>
+            <div class="kpi">
+              <div class="k">New lots</div>
+              <div class="v">+3,902</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Trusted sellers</div>
+              <div class="v">18.6k</div>
             </div>
           </div>
-
-          <div class="items">
-            <div class="item-card">
-              <div class="item-img" style="background-image:url('https://picsum.photos/600/400?random=11')"></div>
-
-              <div class="item-body">
-                <div class="item-top">
-                  <div>
-                    <div class="item-title">Bubble XYZ</div>
-                    <div class="item-sub">By Robertson</div>
-                  </div>
-                  <div class="price">1.56 ETH</div>
-                </div>
-
-                <div class="meta">
-                  <div><strong>02 : 02 : 56</strong>
-                    <div style="font-size:11px;color:var(--muted)">End Time</div>
-                  </div>
-                  <div style="text-align:right"><strong>Highest Bid</strong>
-                    <div style="font-size:11px;color:var(--muted)">&nbsp;</div>
-                  </div>
-                </div>
-
-                <div class="bid">
-                  <div></div>
-                  <button class="btn bidbtn">Place A Bid</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="item-card">
-              <div class="item-img" style="background-image:url('https://picsum.photos/600/400?random=1')"></div>
-
-              <div class="item-body">
-                <div class="item-top">
-                  <div>
-                    <div class="item-title">Bubble ZXR</div>
-                    <div class="item-sub">By Christiano</div>
-                  </div>
-                  <div class="price">1.52 ETH</div>
-                </div>
-
-                <div class="meta">
-                  <div><strong>02 : 01 : 43</strong>
-                    <div style="font-size:11px;color:var(--muted)">End Time</div>
-                  </div>
-                  <div style="text-align:right"><strong>Highest Bid</strong>
-                    <div style="font-size:11px;color:var(--muted)">&nbsp;</div>
-                  </div>
-                </div>
-
-                <div class="bid">
-                  <div></div>
-                  <button class="btn bidbtn">Place A Bid</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="item-card">
-              <div class="item-img" style="background-image:url('https://picsum.photos/600/400?random=2')"></div>
-
-              <div class="item-body">
-                <div class="item-top">
-                  <div>
-                    <div class="item-title">Bubble EXR</div>
-                    <div class="item-sub">By Diogo Jota</div>
-                  </div>
-                  <div class="price">1.48 ETH</div>
-                </div>
-
-                <div class="meta">
-                  <div><strong>01 : 02 : 25</strong>
-                    <div style="font-size:11px;color:var(--muted)">End Time</div>
-                  </div>
-                  <div style="text-align:right"><strong>Highest Bid</strong>
-                    <div style="font-size:11px;color:var(--muted)">&nbsp;</div>
-                  </div>
-                </div>
-
-                <div class="bid">
-                  <div></div>
-                  <button class="btn bidbtn">Place A Bid</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="muted" style="font-weight:800; font-size:13px;">⚡ Real-time bids • Buyer protection • Secure
+            checkout</div>
         </div>
-
       </div>
+    </section>
 
-      <!-- Right Panel -->
-      <aside class="right">
-        <div class="right-head">
-          <div class="right-title">Sold Items</div>
-          <div class="dropdown">2020
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
-              style="opacity:.7; margin-left:6px">
-              <path d="M6 9l6 6 6-6" />
-            </svg>
+    <!-- Live -->
+    <div class="section-head">
+      <h2>Live auctions right now</h2>
+      <a class="link" href="#">View all</a>
+    </div>
+
+    <section class="live-grid">
+      <a class="item" href="#">
+        <div class="img">
+          <span class="badge live">LIVE</span>
+          <span class="badge hot">🔥 Hot</span>
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80"
+            alt="">
+        </div>
+        <div class="p">
+          <div class="title">2020 BMW 3 Series — Clean title</div>
+          <div class="sub"><span>Ends in 02h 18m</span><span>42 bids</span></div>
+          <div class="price">
+            <div>
+              <div class="muted" style="font-weight:900; font-size:12px;">Current bid</div>
+              <div class="v">$ 8,450</div>
+            </div>
+            <div class="minirow">
+              <span class="pill2">👁 312</span>
+              <span class="pill2">📍 Tbilisi</span>
+            </div>
           </div>
         </div>
+      </a>
 
-        <div class="sold-list">
-          <!-- შენი rows 그대로 -->
-          <div class="sold-row">
-            <div class="thumb">
-              <img src="https://picsum.photos/50/50?random=31" alt="">
+      <a class="item" href="#">
+        <div class="img">
+          <span class="badge live">LIVE</span>
+          <img src="https://images.unsplash.com/photo-1519183071298-a2962e402b5f?auto=format&fit=crop&w=1400&q=80"
+            alt="">
+        </div>
+        <div class="p">
+          <div class="title">Canon EOS R6 Mark II — Like New</div>
+          <div class="sub"><span>Ends in 06h 05m</span><span>12 bids</span></div>
+          <div class="price">
+            <div>
+              <div class="muted" style="font-weight:900; font-size:12px;">Current bid</div>
+              <div class="v">$ 1,240</div>
             </div>
+            <div class="minirow">
+              <span class="pill2">👁 214</span>
+              <span class="pill2">📦 Ship</span>
+            </div>
+          </div>
+        </div>
+      </a>
 
-            <div class="sold-info">
-              <div class="sold-name">Abstractly Rainbow</div>
-              <div class="sold-time">08:00 PM, 22 Sep 2020</div>
+      <a class="item" href="#">
+        <div class="img">
+          <span class="badge live">LIVE</span>
+          <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1400&q=80"
+            alt="">
+        </div>
+        <div class="p">
+          <div class="title">Sony A7 IV Body + Battery</div>
+          <div class="sub"><span>Ends in 01d 03h</span><span>19 bids</span></div>
+          <div class="price">
+            <div>
+              <div class="muted" style="font-weight:900; font-size:12px;">Current bid</div>
+              <div class="v">$ 1,099</div>
             </div>
-            <div class="sold-badge">SOLD</div>
+            <div class="minirow">
+              <span class="pill2">👁 98</span>
+              <span class="pill2">✅ Verified</span>
+            </div>
           </div>
-          <div class="sold-row">
-            <div class="thumb">
-              <img src="https://picsum.photos/50/50?random=31" alt="">
+        </div>
+      </a>
+
+      <a class="item" href="#">
+        <div class="img">
+          <span class="badge live">LIVE</span>
+          <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1400&q=80"
+            alt="">
+        </div>
+        <div class="p">
+          <div class="title">Gaming PC RTX 4080 — Mint</div>
+          <div class="sub"><span>Ends in 12h 40m</span><span>33 bids</span></div>
+          <div class="price">
+            <div>
+              <div class="muted" style="font-weight:900; font-size:12px;">Current bid</div>
+              <div class="v">$ 1,520</div>
             </div>
-            <div class="sold-info">
-              <div class="sold-name">Paint Texture Rainbow</div>
-              <div class="sold-time">07:42 PM, 22 Sep 2020</div>
+            <div class="minirow">
+              <span class="pill2">👁 401</span>
+              <span class="pill2">🚚 Pickup</span>
             </div>
-            <div class="sold-badge">SOLD</div>
           </div>
-          <div class="sold-row">
-            <div class="thumb">
-              <img src="https://picsum.photos/50/50?random=31" alt="">
+        </div>
+      </a>
+    </section>
+
+    <!-- ✅ Drawer toggle + overlay (must be before .layout for CSS sibling selector) -->
+    <input id="flt" class="drawer-toggle" type="checkbox" aria-hidden="true">
+    <label for="flt" class="drawer-overlay" aria-hidden="true"></label>
+
+    <!-- Main layout -->
+    <section class="layout">
+      <!-- Filters (drawer on mobile) -->
+      <aside class="card pad filters drawer">
+        <div class="drawer-head">
+          <div style="font-weight:900;">Filters</div>
+          <label for="flt" class="btn btn--ghost" style="padding:10px 12px;">Close</label>
+        </div>
+
+        <div class="drawer-body">
+          <h3>Filters</h3>
+
+          <div class="group">
+            <div class="row">
+              <div class="muted" style="font-weight:900">Condition</div>
+              <div class="muted" style="font-weight:900">Any</div>
             </div>
-            <div class="sold-info">
-              <div class="sold-name">Texture Bhatixano</div>
-              <div class="sold-time">07:20 PM, 22 Sep 2020</div>
-            </div>
-            <div class="sold-badge">SOLD</div>
+            <label class="check"><input type="checkbox" checked> New</label>
+            <label class="check"><input type="checkbox" checked> Used</label>
+            <label class="check"><input type="checkbox"> Refurbished</label>
           </div>
-          <div class="sold-row">
-            <div class="thumb">
-              <img src="https://picsum.photos/50/50?random=31" alt="">
+
+          <div class="group">
+            <div class="row">
+              <div class="muted" style="font-weight:900">Auction type</div>
+              <div class="muted" style="font-weight:900">All</div>
             </div>
-            <div class="sold-info">
-              <div class="sold-name">Abstractly Nion Rate</div>
-              <div class="sold-time">10:00 PM, 21 Sep 2020</div>
-            </div>
-            <div class="sold-badge">SOLD</div>
+            <label class="check"><input type="checkbox" checked> Live auctions</label>
+            <label class="check"><input type="checkbox" checked> Buy now</label>
+            <label class="check"><input type="checkbox"> Reserve met</label>
           </div>
-          <div class="sold-row">
-            <div class="thumb">
-              <img src="https://picsum.photos/50/50?random=31" alt="">
+
+          <div class="group">
+            <div class="muted" style="font-weight:900; margin-bottom:8px;">Price range</div>
+            <div class="range">
+              <div class="two">
+                <div class="field"><span class="muted" style="font-weight:900">$</span><input placeholder="Min"></div>
+                <div class="field"><span class="muted" style="font-weight:900">$</span><input placeholder="Max"></div>
+              </div>
+              <button class="btn btn--primary" style="width:100%;">Apply</button>
             </div>
-            <div class="sold-info">
-              <div class="sold-name">Pattern Merkhujo</div>
-              <div class="sold-time">09:56 PM, 21 Sep 2020</div>
-            </div>
-            <div class="sold-badge">SOLD</div>
           </div>
-          <div class="sold-row">
-            <div class="thumb">
-              <img src="https://picsum.photos/50/50?random=31" alt="">
-            </div>
-            <div class="sold-info">
-              <div class="sold-name">Yellow Blue Texture</div>
-              <div class="sold-time">11:00 PM, 20 Sep 2020</div>
-            </div>
-            <div class="sold-badge">SOLD</div>
-          </div>
-          <div class="sold-row">
-            <div class="thumb">
-              <img src="https://picsum.photos/50/50?random=31" alt="">
-            </div>
-            <div class="sold-info">
-              <div class="sold-name">Bubble Verx Rainbow</div>
-              <div class="sold-time">10:00 PM, 20 Sep 2020</div>
-            </div>
-            <div class="sold-badge">SOLD</div>
+
+          <div class="group">
+            <div class="muted" style="font-weight:900; margin-bottom:8px;">Location</div>
+            <label class="check"><input type="checkbox" checked> Tbilisi</label>
+            <label class="check"><input type="checkbox"> Batumi</label>
+            <label class="check"><input type="checkbox"> Kutaisi</label>
+            <label class="check"><input type="checkbox"> Any</label>
           </div>
         </div>
       </aside>
+
+      <!-- Results -->
+      <div>
+        <div class="bar">
+          <div class="left">
+            <div style="font-weight:900;">Trending lots</div>
+            <span class="muted">•</span>
+            <div class="muted" style="font-weight:800;">Showing <b style="color:var(--text)">24</b> results</div>
+          </div>
+
+          <!-- Mobile: Filter button appears via CSS -->
+          <label for="flt" class="btn btn--ghost btn-filter">Filters</label>
+
+          <select class="select">
+            <option>Sort: Ending soon</option>
+            <option>Sort: Lowest price</option>
+            <option>Sort: Highest price</option>
+            <option>Sort: Most bids</option>
+            <option>Sort: Most watched</option>
+          </select>
+        </div>
+
+        <div class="grid-cards">
+          <a class="item" href="#">
+            <div class="img">
+              <span class="badge live">LIVE</span>
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80"
+                alt="">
+            </div>
+            <div class="p">
+              <div class="title">2018 Toyota Prius — Low mileage</div>
+              <div class="sub"><span>Ends 03h 40m</span><span>18 bids</span></div>
+              <div class="price">
+                <div>
+                  <div class="muted" style="font-weight:900; font-size:12px;">Current bid</div>
+                  <div class="v">$ 5,200</div>
+                </div>
+                <div class="minirow">
+                  <span class="pill2">👁 120</span>
+                  <span class="pill2">📍 Rustavi</span>
+                </div>
+              </div>
+              <button class="btn btn--primary" style="width:100%;">Place bid</button>
+            </div>
+          </a>
+
+          <a class="item" href="#">
+            <div class="img">
+              <span class="badge hot">🔥 Hot</span>
+              <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1400&q=80"
+                alt="">
+            </div>
+            <div class="p">
+              <div class="title">Gaming Laptop i9 / RTX — Like New</div>
+              <div class="sub"><span>Buy now</span><span>—</span></div>
+              <div class="price">
+                <div>
+                  <div class="muted" style="font-weight:900; font-size:12px;">Price</div>
+                  <div class="v">$ 1,180</div>
+                </div>
+                <div class="minirow">
+                  <span class="pill2">✅ Verified</span>
+                  <span class="pill2">📦 Ship</span>
+                </div>
+              </div>
+              <button class="btn" style="width:100%;">Buy now</button>
+            </div>
+          </a>
+
+          <a class="item" href="#">
+            <div class="img">
+              <span class="badge live">LIVE</span>
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=80"
+                alt="">
+            </div>
+            <div class="p">
+              <div class="title">Canon RF 24–70mm Lens</div>
+              <div class="sub"><span>Ends 1d 06h</span><span>9 bids</span></div>
+              <div class="price">
+                <div>
+                  <div class="muted" style="font-weight:900; font-size:12px;">Current bid</div>
+                  <div class="v">$ 620</div>
+                </div>
+                <div class="minirow">
+                  <span class="pill2">👁 67</span>
+                  <span class="pill2">📍 Tbilisi</span>
+                </div>
+              </div>
+              <button class="btn btn--primary" style="width:100%;">Place bid</button>
+            </div>
+          </a>
+        </div>
+
+        <div style="display:flex; justify-content:center; margin-top:14px;">
+          <button class="btn">Load more</button>
+        </div>
+      </div>
     </section>
 
-    <app-footer-component></app-footer-component>
+    <section class="promos">
+      <div class="promo">
+        <h3>Buyer protection</h3>
+        <p>Secure payments, dispute support, and transparent seller ratings.</p>
+      </div>
+      <div class="promo">
+        <h3>Real-time bidding</h3>
+        <p>Instant bid updates, watchlist alerts, and ending-soon sorting.</p>
+      </div>
+      <div class="promo">
+        <h3>Verified sellers</h3>
+        <p>Identity checks and performance badges to increase trust.</p>
+      </div>
+    </section>
 
-  </div>
-</div>
+    <app-footer-component />
+  </main>
