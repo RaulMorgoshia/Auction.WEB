@@ -39,8 +39,8 @@
 
     .full {
       width: 100%;
-      padding-left: clamp(16px, 4vw, 64px);
-      padding-right: clamp(16px, 4vw, 64px);
+      padding-left: clamp(16px, 4vw, 100px);
+      padding-right: clamp(16px, 4vw, 100px);
     }
 
     .inner {
